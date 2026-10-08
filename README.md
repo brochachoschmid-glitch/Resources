@@ -8,9 +8,24 @@ A public, curated library of public safety media: videos, documents, articles, a
 - **Thumbnails**: YouTube links get them automatically; other items show a placeholder for their type unless you set `thumbnail`
 - Light/dark mode, works on mobile, and needs no build step
 
-## Adding or editing resources
+## Updating content with Claude
 
-All content lives in **`data/resources.json`**. To add a resource, copy an existing entry inside `"resources"` and change its fields:
+Open a Claude Code session on this repo (claude.ai/code, the Claude app or the desktop app) and use the **`/add-resource`** skill, or just ask in plain words:
+
+```
+/add-resource https://www.youtube.com/watch?v=...
+/add-resource https://agency.gov/report.pdf  https://podcast.example/ep12
+Move the thermal imaging chart to Tactical Science and tag it "flir"
+Remove the de-escalation walkthrough
+Clear out all the placeholder examples
+What's in the Legal topic?
+```
+
+Claude reads each link, writes the title, description and tags, picks the type and topic, checks the data, shows you what changed, then commits and pushes. GitHub Pages updates about a minute later. The steps Claude follows are in `.claude/skills/add-resource/SKILL.md`.
+
+## Adding or editing resources by hand
+
+All content lives in **`data/resources.json`**. You can also use the helper script, e.g. `python3 scripts/resources.py add --title … --url … --type video --topic training --tags "a,b"`. Run it with `-h` to see all commands. To add a resource, copy an existing entry inside `"resources"` and change its fields:
 
 ```json
 {
