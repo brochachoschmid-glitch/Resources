@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resource Library</title>
+  <meta name="description" content="A curated library of public safety training, legal, technology, wellness and tactical science resources.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><path d='M9 8h4v16H9zM15 8h4v16h-4zM21.5 8.6l3.8 1.2-4.6 15-3.8-1.2z' fill='white'/></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Resource Library
+      </a>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <h1>Resource Library</h1>
+      <p>Curated videos, documents, articles, audio and images on public safety training, law, technology, wellness and tactical science.</p>
+    </section>
+
+    <section class="controls" aria-label="Search and filters">
+      <div class="search">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.42 1.4-5.39-5.38A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+        <input id="search" type="search" placeholder="Search titles, descriptions, tags…" autocomplete="off" aria-label="Search resources">
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Topic</span>
+        <div id="topic-filters" class="chips" role="group" aria-label="Filter by topic"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div id="type-filters" class="chips" role="group" aria-label="Filter by media type"></div>
+      </div>
+      <div class="status-row">
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+        <div id="active-tag" class="active-tag" hidden></div>
+        <button id="clear" class="link-btn" type="button" hidden>Clear filters</button>
+      </div>
+    </section>
+
+    <section id="grid" class="grid" aria-label="Resources"></section>
+    <p id="empty" class="empty" hidden>No resources match your filters.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Resources link to external sites; content belongs to its respective owners.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
