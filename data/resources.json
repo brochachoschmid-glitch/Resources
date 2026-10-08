@@ -1,17 +1,47 @@
 {
   "topics": [
-    { "id": "training", "label": "Training & Tactics" },
-    { "id": "legal", "label": "Legal & Policy" },
-    { "id": "uas-tech", "label": "UAS / Technology" },
-    { "id": "wellness", "label": "Wellness & Community" },
-    { "id": "tactical-science", "label": "Tactical Science" }
+    {
+      "id": "training",
+      "label": "Training & Tactics"
+    },
+    {
+      "id": "legal",
+      "label": "Legal & Policy"
+    },
+    {
+      "id": "uas-tech",
+      "label": "UAS / Technology"
+    },
+    {
+      "id": "wellness",
+      "label": "Wellness & Community"
+    },
+    {
+      "id": "tactical-science",
+      "label": "Tactical Science"
+    }
   ],
   "types": [
-    { "id": "video", "label": "Video" },
-    { "id": "document", "label": "Document" },
-    { "id": "article", "label": "Article" },
-    { "id": "audio", "label": "Audio" },
-    { "id": "image", "label": "Image" }
+    {
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "id": "document",
+      "label": "Document"
+    },
+    {
+      "id": "article",
+      "label": "Article"
+    },
+    {
+      "id": "audio",
+      "label": "Audio"
+    },
+    {
+      "id": "image",
+      "label": "Image"
+    }
   ],
   "resources": [
     {
@@ -20,7 +50,11 @@
       "url": "https://example.com/replace-me",
       "type": "video",
       "topic": "training",
-      "tags": ["de-escalation", "scenario", "example"],
+      "tags": [
+        "de-escalation",
+        "scenario",
+        "example"
+      ],
       "date": "2026-01-15"
     },
     {
@@ -29,7 +63,11 @@
       "url": "https://example.com/replace-me",
       "type": "document",
       "topic": "training",
-      "tags": ["cqb", "handout", "example"],
+      "tags": [
+        "cqb",
+        "handout",
+        "example"
+      ],
       "date": "2026-02-03"
     },
     {
@@ -38,7 +76,11 @@
       "url": "https://example.com/replace-me",
       "type": "article",
       "topic": "legal",
-      "tags": ["fourth amendment", "case law", "example"],
+      "tags": [
+        "fourth amendment",
+        "case law",
+        "example"
+      ],
       "date": "2026-03-10"
     },
     {
@@ -47,7 +89,11 @@
       "url": "https://example.com/replace-me",
       "type": "document",
       "topic": "legal",
-      "tags": ["use of force", "policy", "example"],
+      "tags": [
+        "use of force",
+        "policy",
+        "example"
+      ],
       "date": "2025-11-20"
     },
     {
@@ -56,7 +102,12 @@
       "url": "https://example.com/replace-me",
       "type": "video",
       "topic": "uas-tech",
-      "tags": ["uas", "dfr", "faa", "example"],
+      "tags": [
+        "uas",
+        "dfr",
+        "faa",
+        "example"
+      ],
       "date": "2026-04-02"
     },
     {
@@ -65,7 +116,11 @@
       "url": "https://example.com/replace-me",
       "type": "image",
       "topic": "uas-tech",
-      "tags": ["thermal", "infographic", "example"],
+      "tags": [
+        "thermal",
+        "infographic",
+        "example"
+      ],
       "date": "2026-05-12"
     },
     {
@@ -74,7 +129,11 @@
       "url": "https://example.com/replace-me",
       "type": "audio",
       "topic": "wellness",
-      "tags": ["peer support", "podcast", "example"],
+      "tags": [
+        "peer support",
+        "podcast",
+        "example"
+      ],
       "date": "2026-06-08"
     },
     {
@@ -83,7 +142,11 @@
       "url": "https://example.com/replace-me",
       "type": "article",
       "topic": "wellness",
-      "tags": ["community", "directory", "example"],
+      "tags": [
+        "community",
+        "directory",
+        "example"
+      ],
       "date": "2026-07-01"
     },
     {
@@ -92,7 +155,11 @@
       "url": "https://example.com/replace-me",
       "type": "article",
       "topic": "tactical-science",
-      "tags": ["human factors", "research", "example"],
+      "tags": [
+        "human factors",
+        "research",
+        "example"
+      ],
       "date": "2026-08-14"
     },
     {
@@ -101,8 +168,26 @@
       "url": "https://example.com/replace-me",
       "type": "audio",
       "topic": "tactical-science",
-      "tags": ["reaction time", "lecture", "example"],
+      "tags": [
+        "reaction time",
+        "lecture",
+        "example"
+      ],
       "date": "2026-09-05"
+    },
+    {
+      "title": "Rescue, Response, and Resilience: A Critical Incident Review of the Orlando Public Safety Response to the Attack on the Pulse Nightclub",
+      "description": "Independent COPS Office and Police Foundation review of the Orlando Police Department's response to the 2016 Pulse nightclub attack. Covers the tactical response, multi-agency coordination, officer wellness and community resilience, with lessons learned for active-shooter incidents.",
+      "url": "https://www.policinginstitute.org/wp-content/uploads/2017/12/Orlando-Pulse.pdf",
+      "type": "document",
+      "topic": "training",
+      "tags": [
+        "critical incident review",
+        "active shooter",
+        "after-action",
+        "multi-agency"
+      ],
+      "date": "2017-12-01"
     }
   ]
 }
